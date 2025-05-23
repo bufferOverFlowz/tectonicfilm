@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Photography Portfolio</title>
-  <link rel="stylesheet" href="CSS/index.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luxury Car Photography</title>
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
   <div class="portfolio">
-    <h1>My Photography Portfolio</h1>
+    <h1>Luxury Car Photography</h1>
     <div class="gallery">
       <!-- Example: Replace thumbnail and large image links -->
-      <a class="gallery-item" href="https://imgur.com/yourLargeImage1.jpg" data-lightbox="gallery">
-        <img loading="lazy" src="https://imgur.com/yourThumbnail1.jpg" alt="Photo 1">
+      <a class="gallery-item" href="https://imgur.com/iwrCJDs" data-lightbox="gallery" data-title="Photo 1">
+        <img loading="lazy" src="https://imgur.com/yourThumbnail1.jpg" alt="Photo 1" />
       </a>
-      <a class="gallery-item" href="https://imgur.com/yourLargeImage2.jpg" data-lightbox="gallery">
-        <img loading="lazy" src="https://imgur.com/yourThumbnail2.jpg" alt="Photo 2">
+      <a class="gallery-item" href="https://imgur.com/yourLargeImage2.jpg" data-lightbox="gallery" data-title="Photo 2">
+        <img loading="lazy" src="https://imgur.com/yourThumbnail2.jpg" alt="Photo 2" />
       </a>
       <!-- Add more items as needed -->
     </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'alwaysShowNavOnTouchDevices': true
+    });
+  </script>
 </body>
 </html>
