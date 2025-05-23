@@ -2,33 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Luxury Car Photography</title>
-  <link rel="stylesheet" href="CSS/index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sheldon Phillips</title>
+  <link rel="stylesheet" href="index.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
-  <div class="portfolio">
+  <header>
     <h1>Luxury Car Photography</h1>
-    <div class="gallery">
-      <!-- Example: Replace thumbnail and large image links -->
-      <a href="https://i.imgur.com/iwrCJDs.jpg" data-lightbox="gallery" data-title="Photo Caption">
-        <img loading="lazy" src="https://i.imgur.com/iwrCJDst.jpg" alt="Photo Caption" />
-       </a>
+    <p>Automotive Gallery</p>
+  </header>
 
-      <a class="gallery-item" href="https://imgur.com/yourLargeImage2.jpg" data-lightbox="gallery" data-title="Photo 2">
-        <img loading="lazy" src="https://imgur.com/yourThumbnail2.jpg" alt="Photo 2" />
+  <main>
+    <section class="gallery">
+      <a href="https://i.imgur.com/iwrCJDs.jpg" data-lightbox="cars" data-title="Luxury Car 1">
+        <img loading="lazy" src="https://i.imgur.com/iwrCJDst.jpg" alt="Luxury Car 1" />
       </a>
-      <!-- Add more items as needed -->
-    </div>
-  </div>
+      <a href="https://i.imgur.com/yourLargeImage2.jpg" data-lightbox="cars" data-title="Luxury Car 2">
+        <img loading="lazy" src="https://i.imgur.com/yourThumbnail2.jpg" alt="Luxury Car 2" />
+      </a>
+      <a href="https://i.imgur.com/yourLargeImage3.jpg" data-lightbox="cars" data-title="Luxury Car 3">
+        <img loading="lazy" src="https://i.imgur.com/yourThumbnail3.jpg" alt="Luxury Car 3" />
+      </a>
+      <!-- Add more gallery items here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Luxury Car Photography</p>
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   <script>
     lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true,
-      'alwaysShowNavOnTouchDevices': true
+      resizeDuration: 200,
+      wrapAround: true,
+      alwaysShowNavOnTouchDevices: true,
     });
   </script>
 </body>
